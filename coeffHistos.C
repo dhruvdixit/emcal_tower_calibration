@@ -1,0 +1,176 @@
+{
+//=========Macro generated from canvas: c1/c1
+//=========  (Fri Jul 15 06:23:54 2016) by ROOT version5.34/30
+   TCanvas *c1 = new TCanvas("c1", "c1",920,580,1000,500);
+   gStyle->SetOptStat(0);
+   c1->Range(0,0,1,1);
+   c1->SetFillColor(0);
+   c1->SetBorderMode(0);
+   c1->SetBorderSize(2);
+   c1->SetFrameBorderMode(0);
+  
+// ------------>Primitives in pad: c1_1
+   TPad *c1_1 = new TPad("c1_1", "c1_1",0.01,0.01,0.49,0.99);
+   c1_1->Draw();
+   c1_1->cd();
+   c1_1->Range(-1.375,-0.7977682,7.375,4.169613);
+   c1_1->SetFillColor(0);
+   c1_1->SetBorderMode(0);
+   c1_1->SetBorderSize(2);
+   c1_1->SetLogy();
+   c1_1->SetFrameBorderMode(0);
+   c1_1->SetFrameBorderMode(0);
+   
+   TH1D *emcal = new TH1D("emcal","EMCA Cell Coefficients",70,-0.5,6.5);
+   emcal->SetBinContent(10,1);
+   emcal->SetBinContent(11,25);
+   emcal->SetBinContent(12,340);
+   emcal->SetBinContent(13,1205);
+   emcal->SetBinContent(14,2485);
+   emcal->SetBinContent(15,1752);
+   emcal->SetBinContent(16,1382);
+   emcal->SetBinContent(17,1244);
+   emcal->SetBinContent(18,902);
+   emcal->SetBinContent(19,630);
+   emcal->SetBinContent(20,427);
+   emcal->SetBinContent(21,267);
+   emcal->SetBinContent(22,163);
+   emcal->SetBinContent(23,81);
+   emcal->SetBinContent(24,63);
+   emcal->SetBinContent(25,31);
+   emcal->SetBinContent(26,31);
+   emcal->SetBinContent(27,32);
+   emcal->SetBinContent(28,14);
+   emcal->SetBinContent(29,30);
+   emcal->SetBinContent(30,23);
+   emcal->SetBinContent(31,18);
+   emcal->SetBinContent(32,9);
+   emcal->SetBinContent(33,10);
+   emcal->SetBinContent(34,5);
+   emcal->SetBinContent(35,4);
+   emcal->SetBinContent(36,3);
+   emcal->SetBinContent(37,2);
+   emcal->SetBinContent(38,6);
+   emcal->SetBinContent(39,2);
+   emcal->SetBinContent(40,6);
+   emcal->SetBinContent(42,6);
+   emcal->SetBinContent(44,2);
+   emcal->SetBinContent(47,7);
+   emcal->SetBinContent(52,4);
+   emcal->SetBinContent(60,28);
+   emcal->SetEntries(11240);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#000099");
+   emcal->SetLineColor(ci);
+   emcal->SetMarkerStyle(2);
+   emcal->GetXaxis()->SetTitle("#alpha");
+   emcal->GetXaxis()->SetLabelFont(42);
+   emcal->GetXaxis()->SetLabelSize(0.035);
+   emcal->GetXaxis()->SetTitleSize(0.035);
+   emcal->GetXaxis()->SetTitleFont(42);
+   emcal->GetYaxis()->SetLabelFont(42);
+   emcal->GetYaxis()->SetLabelSize(0.035);
+   emcal->GetYaxis()->SetTitleSize(0.035);
+   emcal->GetYaxis()->SetTitleFont(42);
+   emcal->GetZaxis()->SetLabelFont(42);
+   emcal->GetZaxis()->SetLabelSize(0.035);
+   emcal->GetZaxis()->SetTitleSize(0.035);
+   emcal->GetZaxis()->SetTitleFont(42);
+   emcal->Draw("P");
+   
+   TPaveText *pt = new TPaveText(0.2128497,0.94,0.7871503,0.995,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   pt->SetTextFont(42);
+   TText *text = pt->AddText("EMCA Cell Coefficients");
+   pt->Draw();
+   c1_1->Modified();
+   c1->cd();
+  
+// ------------>Primitives in pad: c1_2
+   c1_2 = new TPad("c1_2", "c1_2",0.51,0.01,0.99,0.99);
+   c1_2->Draw();
+   c1_2->cd();
+   c1_2->Range(-1.375,-0.7241249,7.375,3.506824);
+   c1_2->SetFillColor(0);
+   c1_2->SetBorderMode(0);
+   c1_2->SetBorderSize(2);
+   c1_2->SetLogy();
+   c1_2->SetFrameBorderMode(0);
+   c1_2->SetFrameBorderMode(0);
+   
+   TH1D *dcal = new TH1D("dcal","DCAL Cell Coefficients",70,-0.5,6.5);
+   dcal->SetBinContent(10,1);
+   dcal->SetBinContent(11,4);
+   dcal->SetBinContent(12,15);
+   dcal->SetBinContent(13,34);
+   dcal->SetBinContent(14,33);
+   dcal->SetBinContent(15,31);
+   dcal->SetBinContent(16,54);
+   dcal->SetBinContent(17,122);
+   dcal->SetBinContent(18,120);
+   dcal->SetBinContent(19,205);
+   dcal->SetBinContent(20,508);
+   dcal->SetBinContent(21,640);
+   dcal->SetBinContent(22,579);
+   dcal->SetBinContent(23,478);
+   dcal->SetBinContent(24,402);
+   dcal->SetBinContent(25,331);
+   dcal->SetBinContent(26,318);
+   dcal->SetBinContent(27,237);
+   dcal->SetBinContent(28,200);
+   dcal->SetBinContent(29,183);
+   dcal->SetBinContent(30,83);
+   dcal->SetBinContent(31,99);
+   dcal->SetBinContent(32,40);
+   dcal->SetBinContent(33,45);
+   dcal->SetBinContent(34,37);
+   dcal->SetBinContent(35,33);
+   dcal->SetBinContent(36,6);
+   dcal->SetBinContent(37,9);
+   dcal->SetBinContent(38,16);
+   dcal->SetBinContent(39,10);
+   dcal->SetBinContent(40,5);
+   dcal->SetBinContent(42,13);
+   dcal->SetBinContent(44,9);
+   dcal->SetBinContent(47,4);
+   dcal->SetBinContent(52,3);
+   dcal->SetBinContent(60,4);
+   dcal->SetEntries(4911);
+
+   ci = TColor::GetColor("#000099");
+   dcal->SetLineColor(ci);
+   dcal->SetMarkerStyle(2);
+   dcal->GetXaxis()->SetTitle("#alpha");
+   dcal->GetXaxis()->SetLabelFont(42);
+   dcal->GetXaxis()->SetLabelSize(0.035);
+   dcal->GetXaxis()->SetTitleSize(0.035);
+   dcal->GetXaxis()->SetTitleFont(42);
+   dcal->GetYaxis()->SetLabelFont(42);
+   dcal->GetYaxis()->SetLabelSize(0.035);
+   dcal->GetYaxis()->SetTitleSize(0.035);
+   dcal->GetYaxis()->SetTitleFont(42);
+   dcal->GetZaxis()->SetLabelFont(42);
+   dcal->GetZaxis()->SetLabelSize(0.035);
+   dcal->GetZaxis()->SetTitleSize(0.035);
+   dcal->GetZaxis()->SetTitleFont(42);
+   dcal->Draw("P");
+   
+   pt = new TPaveText(0.2170331,0.94,0.7829669,0.995,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   pt->SetTextFont(42);
+   text = pt->AddText("DCAL Cell Coefficients");
+   pt->Draw();
+   c1_2->Modified();
+   c1->cd();
+   c1->Modified();
+   c1->cd();
+   c1->SetSelected(c1);
+}
